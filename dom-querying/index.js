@@ -24,7 +24,7 @@ for (item of unorderedList) {
   //   return colors[randomNum];
   // }
 
-  const colorGenerator = function () {
+  const colorGenerator = () =>{
     let letter = '0123456789ABCDEF';
     let hex = '#';
     for (let i = 0; i < 6; i++) {
