@@ -1,12 +1,13 @@
 function randomNum() {
   // generate a random number between 1 and 10
-  let num = Math.ceil(Math.random() * 10);
-  return num;
+  let randomNumber = Math.ceil(Math.random() * 10);
+  return randomNumber;
 }
 
-let counter = 0;
- 
-guessingGame();
+// let counter = 0;
+// for(let i = 0; i < 200; i++) {
+//   console.log(randomNum())
+// }
 
 function guessingGame() {
   // your code here
@@ -22,3 +23,5 @@ function guessingGame() {
     alert(`Sorry, you failed to guess the number in three attempts. The number was ${number}!`);
   }
 }
+
+guessingGame();
