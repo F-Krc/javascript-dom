@@ -18,11 +18,20 @@ for (item of category) {
 const unorderedList = document.getElementsByClassName('food-category');
 
 for (item of unorderedList) {
-  function colorGenerator() {
-    let colors = ['green', 'blue', 'yellow', 'purple', 'coral', 'cyan', 'lightblue', 'lightcyan', 'lightgreen', 'orange'];
-    let randomNum = Math.floor(Math.random() * colors.length);
-    return colors[randomNum];
-  }
+  // function colorGenerator() {
+  //   let colors = ['green', 'blue', 'yellow', 'purple', 'coral', 'cyan', 'lightblue', 'lightcyan', 'lightgreen', 'orange'];
+  //   let randomNum = Math.floor(Math.random() * colors.length);
+  //   return colors[randomNum];
+  // }
+
+  const colorGenerator = function () {
+    let letter = '0123456789ABCDEF';
+    let hex = '#';
+    for (let i = 0; i < 6; i++) {
+      hex += letter[Math.floor(Math.random() * 16)];
+    }
+    return hex;
+  };
 
   item.style.backgroundColor = colorGenerator();
   item.style.display = 'block';
@@ -52,7 +61,6 @@ sectionAllergy.style.display = 'flex';
 sectionAllergy.style.flexFlow = 'column nowrap';
 sectionAllergy.style.justifyContent = 'center';
 
-
 for (item of document.getElementsByClassName('allergy-info')) {
   item.style.listStyle = 'none';
 }
@@ -62,7 +70,6 @@ const footer = document.querySelector('footer');
 footer.style.display = 'flex';
 footer.style.flexFlow = 'row wrap';
 footer.style.justifyContent = 'center';
-
 
 const foodDescription = document.querySelectorAll('.food-desc');
 for (item of foodDescription) {
