@@ -55,7 +55,7 @@ for (let book of books) {
           <p class="card-text status">${authorNameArray[0]}, ${authorNameArray[1]} </p>
         </div>
         <div class="card-footer text-end">
-          <a href="#" class="btn ${btnClass} rounded-pill">${isReading}</a>
+          <a href="#" class="btn ${btnClass} rounded-pill status fs-6">${isReading}</a>
         </div>
       </div>
     </li>
