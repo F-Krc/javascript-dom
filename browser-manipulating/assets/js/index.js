@@ -43,6 +43,7 @@ for (let book of books) {
   }
 
   let card = `
+  <li>
       <div class="card col-lg-3 col-md-6 p-1 m-3 book">
         <img src="${book.img}" class="card-img-top book-cover" alt="..." />
         <div class="card-body">
@@ -53,6 +54,7 @@ for (let book of books) {
           <a href="#" class="btn ${btnClass} rounded-pill">${isReading}</a>
         </div>
       </div>
+    </li>
   `;
 
   cards.insertAdjacentHTML('beforeend', card);
