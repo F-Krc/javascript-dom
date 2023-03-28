@@ -28,6 +28,7 @@ const books = [
 // Your code here
 
 let cards = document.getElementById('cards');
+books.sort((a, b) => a.author.localeCompare(b.author));
 
 for (let book of books) {
   let isReading = '';
@@ -42,11 +43,11 @@ for (let book of books) {
   }
 
   let card = `
-      <div class="card col-lg-3 col-md-6 p-1 m-3">
-        <img src="${book.img}" class="card-img-top" alt="..." />
+      <div class="card col-lg-3 col-md-6 p-1 m-3 book">
+        <img src="${book.img}" class="card-img-top book-cover" alt="..." />
         <div class="card-body">
           <h5 class="card-title">${book.title} </h5>
-          <p class="card-text">${authorNameArray[1]}, ${authorNameArray[0]} </p>
+          <p class="card-text status">${authorNameArray[1]}, ${authorNameArray[0]} </p>
         </div>
         <div class="card-footer text-end">
           <a href="#" class="btn ${btnClass} rounded-pill">${isReading}</a>
