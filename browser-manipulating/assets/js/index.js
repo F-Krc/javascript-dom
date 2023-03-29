@@ -30,7 +30,7 @@ books.forEach(item => item.author = item.author.split(' ').reverse().join(' '));
 
 books.sort((a, b) => a.author.localeCompare(b.author));
 
-let cards = document.getElementById('cards');
+let cards = document.querySelector('.book-list');
 
 for (let book of books) {
   let isReading = '';
