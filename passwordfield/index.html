@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 700px;
+        height: 70px;
+        margin: 20% auto;
+      }
+
+      input[type='password'],
+      input[type='checkbox'],
+      input[type='text']{
+        padding: 5px;
+        font-size: 1rem;
+        margin: 10px;
+        border: 2px solid #ccc;
+      }
+      input[type='password']:focus,
+      input[type='checkbox']:focus,
+      input[type='text']:focus{
+        font-size: 1rem;
+        border: 2px solid lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="passwordInput">Password (6 characters minimum):</label>
+      <input type="password" id="passwordInput" minlength="6" required />
+
+      <input type="checkbox" id="showPasswordCheckbox" />
+      <label for="showPasswordCheckbox">Show password</label> 
+    </form>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
