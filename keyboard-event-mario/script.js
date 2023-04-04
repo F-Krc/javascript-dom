@@ -48,3 +48,40 @@ document.addEventListener('keydown', (e) => {
 });
 
 document.addEventListener('keyup', stopMario);
+
+
+
+// // Task 1:
+// const mario = document.querySelector("#mario");
+// // Task 2:
+// const imgMario = document.querySelector("#mario>img");
+// imgMario.src = "./assets/mario-stand.gif";
+
+// // Task 3:
+// function stopMario() {
+//   imgMario.src = "./assets/mario-stand.gif";
+// }
+
+// // Task 4:
+// mario.style.display = "inline-block";
+// mario.style.position = "relative";
+// function moveMario(event) {
+//   const currentLeft = parseInt(mario.style.left) || 0;
+//   if (!imgMario.src.includes("mario-walk.gif")) {
+//     imgMario.src = "./assets/mario-walk.gif";
+//   }
+
+//   if (event.key === "ArrowRight") {
+//     const newLeft = currentLeft + 10;
+//     mario.style.left = newLeft + "px";
+//     mario.style.transform = "rotateY(0)";
+//   } else if (event.key === "ArrowLeft") {
+//     const newLeft = currentLeft - 10;
+//     mario.style.left = newLeft + "px";
+//     mario.style.transform = "rotateY(-180deg)";
+//   }
+// }
+
+// // Task 5:
+// document.addEventListener("keydown", moveMario);
+// document.addEventListener("keyup", stopMario);
