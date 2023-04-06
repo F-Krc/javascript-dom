@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .completed {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Aufgabenliste</h1>
+    <input id="task-input" type="text" placeholder="Aufgabe eingeben" />
+    <button id="add-task">Aufgabe hinzufügen</button>
+    <ul id="task-list"></ul>
+
+    <script>
+      const addTaskButton = document.getElementById('add-task');
+      const taskInput = document.getElementById('task-input');
+      const taskList = document.getElementById('task-list');
+
+      addTaskButton.addEventListener('click', function () {
+        const taskText = taskInput.value;
+        const newTask = document.createElement('li');
+        newTask.textContent = taskText;
+        taskList.appendChild(newTask);
+        taskInput.value = '';
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.style.marginLeft = '20px'
+        deleteButton.style.background = 'red'
+        deleteButton.addEventListener('click', function () {
+          newTask.remove();
+        });
+        newTask.appendChild(deleteButton);
+      });
+
+      taskInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          addTaskButton.click();
+        }
+      });
+
+      taskList.addEventListener('click', function (event) {
+        const clickedItem = event.target;
+        if (clickedItem.tagName === 'LI') {
+          clickedItem.classList.toggle('completed');
+        }
+      });
+    </script>
+  </body>
+</html>
