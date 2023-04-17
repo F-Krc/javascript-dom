@@ -1,0 +1,27 @@
+{
+  "name": "browser-comingsoon-f-krc",
+  "version": "1.0.0",
+  "description": "[![Status overview badge](../../blob/badges/.github/badges/main/badge.svg)](#-results)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/browser-comingsoon-F-Krc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/browser-comingsoon-F-Krc/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/browser-comingsoon-F-Krc#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}

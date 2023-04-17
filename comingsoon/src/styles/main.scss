@@ -1,0 +1,55 @@
+// This is where your styles can go :)
+// the existing styles are just a placeholder, feel free to delete :)
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-areas: 'countdown text';
+  height: 100vh;
+  font-family: sans-serif;
+  background-image: url('../images/sunrise.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#countdown{
+  grid-area: countdown;
+  margin: auto;
+  padding: 0 15rem 0 7rem ;
+  font-size: 2rem;
+  color: white;
+}
+#content{
+  grid-area: text;
+  font-size: 1.5rem;
+}
+div{
+  margin: 3rem 1rem;
+}
+span{
+  font-size: 3rem;
+}
+main {
+  margin: auto;
+  //text-align: center;
+  //animation: rota 10s infinite linear;
+}
+
+button{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: azure;
+  font-size: 1.2rem;
+}
+button:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+// @keyframes rota {
+//   0% { transform:rotate(15deg) }
+//   50% { transform:rotate(-15deg) }
+//   100% { transform:rotate(15deg) }
+// }
