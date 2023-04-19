@@ -42,10 +42,8 @@ const getBiscuits = () => {
 };
 biscuits.innerHTML = getBiscuits();
 
-const getBread = () => {
-  let html = '';
-  for (let breadd of parsedData.bread) {
-    html += `
+for (let breadd of parsedData.bread) {
+  let card = `
     <div class="card m-3 col-md-3">
         <img src=${breadd.image} class="card-img-top" style="height:250px;">
         <div class="card-body ">
@@ -55,7 +53,5 @@ const getBread = () => {
         </div>  
     </div>
     `;
-  }
-  return html;
-};
-bread.innerHTML = getBread();
+  bread.insertAdjacentHTML('beforeend', card);
+}
