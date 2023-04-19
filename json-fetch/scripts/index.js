@@ -42,6 +42,9 @@ const getBiscuits = () => {
 };
 biscuits.innerHTML = getBiscuits();
 
+
+
+// the other way
 for (let breadd of parsedData.bread) {
   let card = `
     <div class="card m-3 col-md-3">
